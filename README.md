@@ -69,11 +69,11 @@ src/
 4. Delete a task using the trash icon.
 5. View task completion statistics and delete all completed tasks.
 
-## How to Use
+## Future Improvements
 
-Add support for task deadlines.
-Introduce task categories.
-Implement dark mode.
+- Add support for task deadlines.
+- Introduce task categories.
+- Implement dark mode.
 
 ## Author
 
