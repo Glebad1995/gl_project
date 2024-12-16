@@ -44,6 +44,7 @@ The app will be available at http://localhost:3000 in your browser.
 
 ## Project Structure
 
+```
 src/
 ├── components/
 │ ├── AddTodoForm.tsx // Form for adding new todos
@@ -58,6 +59,7 @@ src/
 │ ├── todo.ts // Type definition for Todo objects
 ├── App.tsx // Main app component
 └── index.tsx // Entry point
+```
 
 ## How to Use
 
