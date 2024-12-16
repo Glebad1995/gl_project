@@ -63,11 +63,11 @@ src/
 
 ## How to Use
 
-1.Open the app in your browser.
-2.Add a task by typing in the input box and pressing Add.
-3.Mark a task as completed by checking the checkbox.
-4.Delete a task using the trash icon.
-4.View task completion statistics and delete all completed tasks.
+1. Open the app in your browser.
+2. Add a task by typing in the input box and pressing **Add**.
+3. Mark a task as completed by checking the checkbox.
+4. Delete a task using the trash icon.
+5. View task completion statistics and delete all completed tasks.
 
 ## How to Use
 
