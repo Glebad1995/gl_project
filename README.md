@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A simple and elegant **Todo App** built with modern web development technologies. This application allows users to manage their tasks effectively, with features such as adding, completing, deleting tasks, and viewing task statistics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Add tasks** with a title.
+- **Mark tasks as completed**.
+- **Delete individual tasks**.
+- **Clear all completed tasks** with a single click.
+- **Persistent data storage** using `localStorage`.
+- **Responsive design** with `TailwindCSS`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: For static typing and improved developer experience.
+- **TailwindCSS**: For fast and customizable styling.
+- **LocalStorage**: To save tasks between sessions.
+- **Lucide-react**: For modern icons.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To run this project locally, follow these steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/todo-app.git
+   cd todo-app
+   ```
+2. Install dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+   bash
+   npm install
+
+3. Start the development server:
+
+   bash
+   npm start
+
+The app will be available at http://localhost:3000 in your browser.
+
+## Project Structure
+
+kotlin
+src/
+├── components/
+│ ├── AddTodoForm.tsx // Form for adding new todos
+│ ├── TodoItem.tsx // Single todo item
+│ ├── TodoList.tsx // List of todos
+│ ├── TodoSummary.tsx // Summary of completed tasks
+├── hooks/
+│ ├── useTodos.ts // Custom hook for managing todo logic
+├── data/
+│ ├── todos.ts // Dummy data for initial todos
+├── types/
+│ ├── todo.ts // Type definition for Todo objects
+├── App.tsx // Main app component
+└── index.tsx // Entry point
+
+## How to Use
+
+1.Open the app in your browser.
+2.Add a task by typing in the input box and pressing Add.
+3.Mark a task as completed by checking the checkbox.
+4.Delete a task using the trash icon.
+4.View task completion statistics and delete all completed tasks.
+
+## How to Use
+
+Add support for task deadlines.
+Introduce task categories.
+Implement dark mode.
+
+## Author
+
+Developed by Gleb Vigurskiy.
+
+Feel free to contribute or provide feedback to improve the app!
